@@ -69,7 +69,7 @@ router.patch("/:id", async function (req, res, next) {
     { _id: req.params.id },
     {
       $set: {
-        description: "true",
+        complete: "true",
       },
     }
   );
